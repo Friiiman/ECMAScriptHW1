@@ -16,11 +16,11 @@ console.log(Math.min(...arr));
 function createCounter() {
   let counter = 0;
   return {
-    increment(value = 1) {
-      return (counter += value);
+    increment() {
+      return (counter += 1);
     },
-    decrement(value = 1) {
-      return (counter -= value);
+    decrement() {
+      return (counter -= 1);
     },
   };
 }
